@@ -27,8 +27,6 @@ def application(environ, start_response):
         if feed.bozo:
             raise feed.bozo_exception
 
-        # https://github.com/andymccurdy/redis-py
-
         r = redis.Redis()
 
         # http://www.feedparser.org/docs/reference.html

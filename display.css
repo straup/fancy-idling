@@ -17,21 +17,21 @@ img {
 }
 
 #message_wrapper{
-color:#fff;
-opacity:.7;
-font-size:225px;
-font-weight:700;
-position:absolute;
-top:0px;
-left:0px;
-margin:20px;
-overflow:hidden;
-text-shadow: 2px 2px #666;
+	color:#fff;
+	opacity:.7;
+	font-size:225px;
+	font-weight:700;
+	position:absolute;
+	top:0px;
+	left:0px;
+	margin:20px;
+	overflow:hidden;
+	text-shadow: 2px 2px #666;
 }
 
 #message a {
-text-decoration: none;
-color:#fff;
+	text-decoration: none;
+	color:#fff;
 }
 
 #photo_loading {

@@ -4,7 +4,7 @@ var tries = 0;
 function connect(){
 
 	try {
-    		var s = new WebSocket("ws://%(HTTP_HOST)s/data");
+		var s = new WebSocket("ws://%(HTTP_HOST)s/data");
 	}
 
 	catch (e){
@@ -16,13 +16,13 @@ function connect(){
 		return;
 	}
 
-	s.onopen = function(e){ 
+	s.onopen = function(e){
 		tries = 0;
 	};
 
 	s.onerror = function(e){
-    	      console.log("got a websocket error!");
-	      console.log(e);
+		console.log("got a websocket error!");
+		console.log(e);
 	};
 
 	s.onclose = function(e){
@@ -46,9 +46,9 @@ function connect(){
 			console.log("trying to reconnect...");
 			connect();
 		}, delay);
-    };
+	};
 
-    s.onmessage = function(e) {
+	s.onmessage = function(e) {
 
 	try {
 		var rsp = JSON.parse(e.data);
@@ -89,7 +89,7 @@ function connect(){
 		console.log(err);
 	}
 
-    }
+	}
 }
 
 function resize(){

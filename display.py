@@ -1,3 +1,6 @@
+# The bulk of this code was copy-pasted as is from:
+# https://github.com/benoitc/gunicorn/tree/master/examples/websocket
+
 import os
 import os.path
 import json
