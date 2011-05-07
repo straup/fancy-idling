@@ -1,0 +1,39 @@
+body {
+	font-family:sans-serif;
+	margin:0;
+	padding:0;
+	background-color:#000;
+}
+
+#photo_wrapper {
+	margin:0;
+	padding:0;
+}
+
+img {
+	margin:0;
+	padding:0;
+	border:none;
+}
+
+#message_wrapper{
+color:#fff;
+opacity:.7;
+font-size:225px;
+font-weight:700;
+position:absolute;
+top:0px;
+left:0px;
+margin:20px;
+overflow:hidden;
+text-shadow: 2px 2px #666;
+}
+
+#message a {
+text-decoration: none;
+color:#fff;
+}
+
+#photo_loading {
+	display:none;
+}
